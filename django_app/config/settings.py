@@ -9,6 +9,28 @@
 8. cp <이전 .gitignore> .
 9. git add -A & git commit -m ‘First commit’
 10. Pycharm Interpreter 설정
+
+모듈 모음
+    회원 관리 모듈 (member/)
+        로그인
+        회원가입
+        팔로우
+        친구찾기
+        친구추천
+        개인페이지
+            내 정보 관리
+            내가 올린 글
+
+    글 관련 모듈 (post/)
+        뉴스피드
+        사진업로드
+        댓글달기
+        좋아요누르기
+        태그달기
+
+    알림 관련 모듈 (noti/)
+        팔로워의 글 등록 알림
+        댓글 알림
 """
 """
 Django settings for instagram project.
@@ -27,7 +49,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -38,7 +59,6 @@ SECRET_KEY = 'tt45i7m*dz@dw22c@o0dsg%!evd#f*)3=l0zi#je34x5!gmr2m'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -82,7 +102,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
@@ -92,7 +111,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -112,7 +130,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -125,7 +142,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
